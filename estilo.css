@@ -1,0 +1,285 @@
+
+* {
+  box-sizing: border-box;
+}
+
+/* Estilo do body */
+body {
+  background: url(imagens/background\ 1.png) center;
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Título */
+.header {
+  padding: 3px;
+  text-align: center;
+  background: rgb(0, 0, 0);
+  color: black;
+}
+.header img{
+  width: 100%;
+  height: auto;
+}
+
+/* Estilo do Menu */
+.navbar {
+  display: flex;
+  background-color: rgb(14, 14, 14);
+}
+
+/* Estilo dos links do Menu */
+.navbar a {
+  color: white;
+  padding: 14px 20px;
+  font-family: 'Alumni Sans Inline One', cursive;
+  font-size: 30px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Muda cor quando passa o mouse nos links do Menu */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Coluna container */
+.row { 
+  display: flex;
+  flex-wrap: wrap;
+}
+.minhafoto img{
+  background-color: #aaa;
+  padding: 1px;
+  width: 100%;
+  height: 200px;
+  
+}
+/* Barra lateral/coluna esquerda */
+.side {
+  flex: 30%;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 20px;
+}
+/* Fake imagem, usada como exemplo */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 1px;
+}
+.imagem1 img{
+  width: 47.5%;
+  float: left;
+}
+/* Coluna Principal */
+.main {
+  flex: 70%;
+  background-color: rgba(255, 255, 255, 0);
+  padding: 5px;
+}
+.main .tt{
+  font-family: 'Permanent Marker', cursive;
+}
+.fakeimg{
+  width: 70%;
+  float: right;
+  margin-left: 30%;
+}
+.youtube{
+  width: 100%;
+  height: 600px;
+  background: black;
+  padding: 5px;
+  border-radius: 10px;
+}
+p, h3, h2, h5{
+  color: aliceblue;
+}
+.historia{
+  width: 95%;
+  height: auto;
+  background: rgba(0, 0, 0, 0.836);
+  text-align: center;
+  border-radius: 20px;
+}
+.historia p{
+  float: left;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-family: 'Libre Baskerville', serif;
+}
+.historia img{
+  text-align: center;
+}
+/* Rodapé */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.836);
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+.copy{
+   float: left;
+   margin-top: 30px;
+   font-size: 17px;
+}
+.wil{
+  text-align: right;
+  margin-top: 30px;
+  font-size: 17px;
+}
+
+/* Configurações para responsivo */
+
+/* -------- Método Mobile First -------- */
+
+/* Personalizado, iPhone Retina */ 
+@media (max-width: 320px) {
+  .header{
+    width: 100%;
+    height: auto;
+  }
+  .navbar {
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  }
+  .header img{
+    width: 100%;
+    height: auto;
+}
+
+.imagem1,.historia img{
+  width: 100%;
+  height: auto;
+}
+.footer{
+  width: 100%;
+  height: auto;
+}
+}
+
+/* Dispositivos extra pequenos, telefones */ 
+@media (max-width: 426px) {
+  
+  .header img{
+    width: 100%;
+    height: auto;
+}
+.navbar{
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+.imagem1,.historia img{
+  width: 100%;
+  height: auto;
+}
+.footer{
+  width: 100%;
+  height: auto;
+}
+
+}
+
+/* Dispositivos pequenos (modo paisagem) */
+@media (max-width: 576px) {
+
+  .header {
+    width: 100%;
+    text-align: center;
+  }
+  .header img{
+    width: 100%;
+    height: auto;
+}
+.navbar{
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+}
+.imagem1,.historia img{
+  width: 100%;
+  height: auto;
+}
+.footer{
+  width: 100%;
+  height: auto;
+}
+}
+
+/* Pequenos dispositivos, tablets */
+@media (max-width: 768px) {
+
+.header img{
+  width: 100%;
+  height: auto;
+}
+.navbar{
+width: 100%;
+height: auto;
+
+}
+.imagem1,.historia img{
+width: 100%;
+height: auto;
+}
+.footer{
+width: 100%;
+height: auto;
+}
+
+}
+
+/* Dispositivos médios, desktops */
+@media (max-width: 992px) {
+  .header {
+    width: 100%;
+    text-align: center;
+  }
+  .header img{
+    width: 100%;
+    height: auto;
+}
+.navbar{
+  width: 100%;
+  height: auto;
+
+}
+.imagem1,.historia img{
+  width: 100%;
+  height: auto;
+}
+.footer{
+  width: 100%;
+  height: auto;
+}
+
+}
+
+/* Dispositivos grandes, telas largas */
+@media (min-width: 1200px) {
+   .header {
+  width: 100%;
+  text-align: center;
+}
+.header img{
+  width: 100%;
+  height: auto;
+}
+.navbar{
+width: 100%;
+height: auto;
+}
+.imagem1,.historia img{
+width: 100%;
+height: auto;
+}
+.footer{
+width: 100%;
+height: auto;
+}
+    
+}
